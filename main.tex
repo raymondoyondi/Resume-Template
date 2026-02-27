@@ -1,0 +1,147 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[tlenc]{utf8}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% Font options
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Raymond Oyondi} \\ \vspace{1pt}
+    \small (612) 460-8325 $|$ \href{mailto:raymondoyondi@gmail.com}{raymondoyondi@gmail.com} $|$ 
+    \href{https://peerlist.io}{peerlist.io/raymondoyondi} $|$
+    \href{https://github.com}{github.com/raymondoyondi}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+Entry level software developer with a foundation in full-stack development, proficient in JavaScript, Python, Java and SQL. Hands-on experience building responsive React front-ends, RESTful APIs with Node.js and automating data workflows with Docker. Natural problem solver with strong communication skills, eager to grow through structured training and real-world projects.
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Texas Tech University}{Lubbock, TX}
+      {Bachelor of Science in Computer Science}{Aug 2026 -- May 2030}
+      \resumeItemListStart
+        \resumeItem{\textbf{Coursework:} Programming Principles, Data Structures, Object-Oriented Programming, Software Engineering}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Oyondi Tech Solutions}{Remote}
+      {Freelance Software Engineer}{Oct 2024 -- Feb 2026}
+      \resumeItemListStart
+        \resumeItem{Spearheaded the design and launch of a responsive portfolio website for a local business using JavaScript, React, Next.js and Tailwind CSS, boosting mobile user engagement by 35\% and cutting bounce rate by 20\%.}
+        \resumeItem{Architected and optimized a robust, scalable RESTful API using Node.js, Express and SQL, refining database queries and streamlining data retrieval to reduce average response time by 15\%.}
+        \resumeItem{Engineered and automated a Python data pipeline with BeautifulSoup and Selenium, containerizing the workflow with Docker to eliminate over 10 hours of manual data entry per week with 100\% accuracy.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{On-Orbit Collision Predictor} $|$ \emph{MATLAB, Python, Django, Next.js}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a MATLAB-based tool for satellite conjunction analysis and space debris collision risk assessment using SGP4/SDP4 propagation for TLE data.}
+            \resumeItem{Engineered a RESTful API backend using Python/Django to process and automate ingestion of NORAD data feeds.}
+            \resumeItem{Built a responsive dashboard in Next.js to visualize collision probability with real-time updates and interactive 3D graphs.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Stocklytics} $|$ \emph{React, TypeScript, TensorFlow, WebSockets}}{}
+          \resumeItemListStart
+            \resumeItem{Engineered a stock analysis platform combining technical indicators with NLP-driven market sentiment, cutting analysis time by 25\%.}
+            \resumeItem{Implemented a deep learning LSTM model using TensorFlow to analyze social media/news for forecasting accuracy.}
+            \resumeItem{Integrated real-time data streaming via WebSockets to ensure <100ms latency in technical indicator visualizations.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{HoopsForecast} $|$ \emph{Python, Streamlit, Pandas, nba-api}}{}
+          \resumeItemListStart
+            \resumeItem{Developed an interactive dashboard in Streamlit to predict NBA player performance, reducing manual reporting time by 40\%.}
+            \resumeItem{Implemented automated data pipelines using nba-api and pandas, resulting in an 80\% reduction in data preparation time.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, JavaScript, SQL} \\
+     \textbf{Frameworks \& Libraries}{: React, Node.js, Next.js, Express, Django, Tailwind CSS} \\
+     \textbf{Developer Tools}{: Git, Docker, Visual Studio Code, MATLAB} \\
+     \textbf{Professional Attributes}{: Problem Solving, Communication, Rapid Learning, Data-Driven Decision Making}
+    }}
+ \end{itemize}
+
+\end{document}
